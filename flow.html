@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Flow — NestDay UI Concept | Brittany Nation</title>
+<meta name="description" content="A simple screen-flow map for the NestDay homeschool planner UI concept, showing navigation between its seven screens.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">🌿</span> NestDay</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="flow.html" aria-current="page">Screen Flow</a></li>
+        <li><a href="today.html">Today</a></li>
+        <li><a href="weekly.html">Weekly</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="page-title" style="padding-bottom:1rem">
+      <p class="eyebrow">Information Architecture</p>
+      <h1 id="page-title" style="font-size:2.4rem">How NestDay <em>flows.</em></h1>
+      <p class="lead">NestDay opens on Today — the one screen a parent needs every morning. The bottom tab bar reaches the four everyday destinations in one tap, and the quieter record-keeping screens live one level deeper, where they are easy to find but never in the way.</p>
+    </section>
+
+    <section aria-labelledby="map-title">
+      <h2 id="map-title">Screen-flow map</h2>
+      <div class="flow-board" role="img" aria-label="Flow diagram: the app opens on Today. The tab bar connects Today, Weekly, Subjects, and More. From More, parents reach Attendance, Portfolio, Field Trips, and Settings. Today also links forward to Weekly planning and to a lesson detail.">
+        <div class="flow-row">
+          <div class="flow-box center"><strong>☀️ Today</strong><small>App opens here</small></div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-box"><strong>Lesson Detail</strong><small>Tap any lesson</small></div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-box"><strong>Mark Complete</strong><small>Progress updates</small></div>
+        </div>
+        <div class="flow-down" aria-hidden="true">↓&nbsp;&nbsp;&nbsp; tab bar connects the everyday screens &nbsp;&nbsp;&nbsp;↓</div>
+        <div class="flow-row">
+          <div class="flow-box"><strong>🗓️ Weekly</strong><small>Plan the week</small></div>
+          <span class="flow-arrow" aria-hidden="true">↔</span>
+          <div class="flow-box"><strong>📚 Subjects</strong><small>Track progress</small></div>
+          <span class="flow-arrow" aria-hidden="true">↔</span>
+          <div class="flow-box"><strong>☀️ Today</strong><small>Back to the day</small></div>
+          <span class="flow-arrow" aria-hidden="true">↔</span>
+          <div class="flow-box"><strong>••• More</strong><small>Records &amp; settings</small></div>
+        </div>
+        <div class="flow-down" aria-hidden="true">↓&nbsp;&nbsp;&nbsp; from More &nbsp;&nbsp;&nbsp;↓</div>
+        <div class="flow-row">
+          <div class="flow-box"><strong>✓ Attendance</strong><small>Month of dots</small></div>
+          <span class="flow-arrow" aria-hidden="true">·</span>
+          <div class="flow-box"><strong>🖼️ Portfolio</strong><small>Work samples</small></div>
+          <span class="flow-arrow" aria-hidden="true">·</span>
+          <div class="flow-box"><strong>🦋 Field Trips</strong><small>Outings &amp; notes</small></div>
+          <span class="flow-arrow" aria-hidden="true">·</span>
+          <div class="flow-box"><strong>⚙️ Settings</strong><small>Family &amp; prefs</small></div>
+        </div>
+        <p class="flow-caption">Arrows show the primary path; the tab bar is present on every main screen, so no screen is ever more than one tap from Today.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="rules-title">
+      <h2 id="rules-title">Navigation rules behind the map</h2>
+      <div class="note-grid">
+        <article class="card"><h3>Today is home</h3><p>There is no separate dashboard. The app opens where the day is, and the tab bar&rsquo;s first item always returns there.</p></article>
+        <article class="card"><h3>Four tabs, no more</h3><p>Today, Weekly, Subjects, and More. Attendance, Portfolio, Trips, and Settings are weekly-or-less tasks, so they live under More instead of competing for thumb space.</p></article>
+        <article class="card"><h3>Adding is always the + button</h3><p>A single gold action button adds a lesson, a sample, or a trip — the same gesture, in the same place, on every list screen.</p></article>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="today.html">Start at the Today screen</a>
+        <a class="btn secondary" href="index.html">Back to overview</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NestDay</strong> — a mobile app UI concept by Brittany Nation.</p>
+    <p><a href="index.html">Overview</a> · <a href="today.html">Today screen</a> · <a href="https://github.com/BrittanyNation/mobile-app-ui-concept">Source on GitHub</a></p>
+  </div>
+</footer>
+</body>
+</html>
